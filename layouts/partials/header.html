@@ -17,7 +17,7 @@
       <a class="{{ $c }}__logo-link" href="/">
         <img class="{{ $c }}__logo-image" src="" alt="">BOTY
       </a>
-      <button class="{{ $c }}__hamburger" @click="open = ! open">Toggle</button>
+      {{ partial "hamburger.html" . }}
       <ul class="{{ $c }}__nav-links" x-show="open" x-transition @click.outside="open = false">
         {{ range .Site.Menus.main -}}
           <li class="{{ $c }}__nav-item" >
