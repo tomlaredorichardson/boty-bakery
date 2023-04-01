@@ -43,12 +43,6 @@
     }
   }
 
-  &__hamburger {
-    @media screen and (min-width: 800px) {
-      display: none;
-    }
-  }
-
   &__nav-item {
     @media screen and (min-width: 800px) {
       padding-left: 1rem;

@@ -3,12 +3,16 @@
   border: none;
   cursor: pointer;
 
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+
   &__inner,
   &::before,
   &::after {
     width: 2rem;
     height: .25rem;
-    background-color: white;
+    background-color: $white;
   }
 
   &::before,
