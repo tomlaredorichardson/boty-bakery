@@ -3,8 +3,8 @@
   "private": true,
   "description": "A starter template for Hugo with Bookshop",
   "scripts": {
-    "start": "run-p javascript prebuild:fetch-color hugo-server",
-    "dev": "run-p javascript-dev prebuild:fetch-color hugo-server bookshop",
+    "start": "run-s javascript prebuild:fetch-color hugo-server",
+    "dev": "run-s javascript-dev prebuild:fetch-color hugo-server bookshop",
     "init": "npx @bookshop/init@latest",
     "hugo-server": "hugo server -D --watch",
     "build": "hugo --source ./ --destination public --baseURL /",
